@@ -10,8 +10,8 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                //sh './deployment.sh'  // Call the deployment script
-                echo 'Hello, World!'
+                sh './deployment.sh'  // Call the deployment script
+                
             }
         }
     }
