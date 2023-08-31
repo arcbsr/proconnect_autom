@@ -8,7 +8,7 @@ GIT_REPO="https://github.com/your-username/your-repo.git"
 BRANCH="main"  # Change to your desired branch
 
 # SSH into the remote server
-ssh "rafi@$DROPLET_IP -i connect.rsa" <<EOF
+ssh rafi@146.190.152.13 -i connect.rsa <<EOF
     cd "$PROJECT_PATH"
     git pull
 EOF
