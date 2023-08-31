@@ -10,5 +10,9 @@ BRANCH="main"  # Change to your desired branch
 # SSH into the remote server
 ssh -T rafi@146.190.152.133 <<EOF
     cd ProConnect
-    ls
+    cd project
+    git pull
+    sudo systemctl restart nginx
+    sudo service gunicorn restart
+    sudo service nginx restart
 EOF
