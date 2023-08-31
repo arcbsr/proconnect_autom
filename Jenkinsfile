@@ -11,7 +11,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 //sh './deployment.sh'  // Call the deployment script
-                sh 'echo 'hello world''
+                'echo 'hello world''
             }
         }
     }
