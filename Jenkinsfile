@@ -11,8 +11,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh "chmod +x -R ${env.WORKSPACE}"
-                cat connect.rsa
-                sh './deployment.sh'  // Call the deployment script
+                echo 'hello world'
+                //sh './deployment.sh'  // Call the deployment script
                 
             }
         }
